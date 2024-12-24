@@ -15,7 +15,7 @@ const appRouter = router({
         const description = opts.input.description;
 
         return {
-            id: '1';
+            id: '1',
         }
     })
 });

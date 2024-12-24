@@ -9,3 +9,14 @@ const trpc = createTRPCProxyClient<AppRouter>({
         }),
     ],
 });
+
+async function main(){
+    let response = await trpc.createTodo.mutate({
+        title: 'New Todo',
+        description: 'This is a new todo',
+    })
+
+    console.log(response);
+}
+
+main();
